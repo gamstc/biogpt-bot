@@ -2,7 +2,7 @@
 # !pip install transformers
 
 import streamlit as st
-# from transformers import pipeline
+from transformers import pipeline
 
 st.markdown("## Chatten mit BioGPT")
 
