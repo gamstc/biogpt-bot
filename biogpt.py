@@ -31,6 +31,8 @@ prompt_option = st.selectbox("Prompt Auswahl", prompt_list_dropdown)
 
 st.markdown("Du hast " + prompt_option + " gewählt.")
 
+st.markdown("---")
+
 
 # Interacting with the model
 input_text= "COVID-19 is"
