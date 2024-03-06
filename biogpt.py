@@ -2,8 +2,22 @@
 # !pip install transformers
 
 import streamlit as st
-from transformers import pipeline
+from transformers import pipeline, set_seed
+from transformers import BioGptTokenizer, BioGptForCausalLM
 
+
+# Setting up the Model through HuggingFace
+model = BioGptForCausalLM.from_pretrained("microsoft/biogpt")
+tokenizer = BioGptTokenizer.from_pretrained("microsoft/biogpt")
+generator = pipeline("text-generation",model=model,tokenizer=tokenizer)
+set_seed(42)
+
+input_text= "COVID-19 is"
+generator(input_text, max_length=20, num_return_sequences=5, do_sample=True)
+
+
+
+# Beginning of the user facing Frontend
 st.markdown("## Chatten mit BioGPT")
 
 st.markdown( "Hier können verschiedene Prompts mit BioGPT getestet werden." )
