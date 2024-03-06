@@ -1,7 +1,0 @@
-name: python-drmedki
-channels:
-  - conda-forge
-dependencies:
-  - streamlit=1.12.2
-  - sacremoses=0.1.2
-  - transformers=4.38.2
