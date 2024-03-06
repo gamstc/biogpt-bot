@@ -1,0 +1,7 @@
+name: drmedki
+channels:
+  - conda-forge
+dependencies:
+  - streamlit
+  - sacremoses
+  - transformers
