@@ -18,3 +18,5 @@ prompt_list_dropdown = ["Prompt 1",
                        ]
 
 prompt_option = st.selectbox("Prompt Auswahl", prompt_list_dropdown)
+
+st.markdown("Du hast "+prompt_option+" gewählt.")
