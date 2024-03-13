@@ -1,4 +1,4 @@
 streamlit==1.12.2
-sacremoses==0.1.1
-transformers==4.38.2
-torch
+# sacremoses==0.1.1
+# transformers==4.38.2
+# torch
