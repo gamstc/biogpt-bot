@@ -2,15 +2,15 @@
 # !pip install transformers
 
 import streamlit as st
-from transformers import pipeline, set_seed
-from transformers import BioGptTokenizer, BioGptForCausalLM
+#from transformers import pipeline, set_seed
+#from transformers import BioGptTokenizer, BioGptForCausalLM
 
 
 # Setting up the Model through HuggingFace
-model = BioGptForCausalLM.from_pretrained("microsoft/biogpt")
-tokenizer = BioGptTokenizer.from_pretrained("microsoft/biogpt")
-generator = pipeline("text-generation",model=model,tokenizer=tokenizer)
-set_seed(42)
+#model = BioGptForCausalLM.from_pretrained("microsoft/biogpt")
+#tokenizer = BioGptTokenizer.from_pretrained("microsoft/biogpt")
+#generator = pipeline("text-generation",model=model,tokenizer=tokenizer)
+#set_seed(42)
 
 
 # Beginning of the user facing Frontend
@@ -35,10 +35,10 @@ st.markdown("---")
 
 
 # Interacting with the model
-input_text= "COVID-19 is"
-answer = generator(input_text, max_length=20, num_return_sequences=5, do_sample=True)
+#input_text= "COVID-19 is"
+#answer = generator(input_text, max_length=20, num_return_sequences=5, do_sample=True)
 
-st.write(answer)
+#st.write(answer)
 
 
 
