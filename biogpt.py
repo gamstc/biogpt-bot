@@ -3,6 +3,15 @@
 
 import streamlit as st
 
+
+# Beginning of the user facing Frontend
+st.markdown("## Chatten mit BioGPT")
+
+st.markdown( "Hier können verschiedene Prompts mit BioGPT getestet werden." )
+
+st.markdown("---")
+
+
 #--------------------------------------------------------------------------------------------------
 # Hugging Face Models: Leaving them our for now. 
 
@@ -18,12 +27,7 @@ from transformers import BioGptTokenizer, BioGptForCausalLM
 #set_seed(42)
 
 
-# Beginning of the user facing Frontend
-st.markdown("## Chatten mit BioGPT")
 
-st.markdown( "Hier können verschiedene Prompts mit BioGPT getestet werden." )
-
-st.markdown("---")
 
 
 prompt_list_dropdown = ["Prompt 1", 
