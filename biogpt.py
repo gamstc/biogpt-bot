@@ -8,7 +8,7 @@ import streamlit as st
 
 
 #from transformers import pipeline, set_seed
-#from transformers import BioGptTokenizer, BioGptForCausalLM
+from transformers import BioGptTokenizer, BioGptForCausalLM
 
 
 # Setting up the Model through HuggingFace
@@ -65,7 +65,7 @@ def response_generator():
     )
     for word in response.split():
         yield word + " "
-        time.sleep(0.5)
+        time.sleep(0.05)
 
 
 st.title("Simple chat")
